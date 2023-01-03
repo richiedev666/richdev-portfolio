@@ -4,3 +4,11 @@
 
 /* BASE */
 @import 'base/layout';
+@import 'base/transitions';
+
+/* PAGES */
+@import 'pages/home';
+
+/* COMPONENTS */
+@import 'components/header';
+@import 'components/sections/home-section';

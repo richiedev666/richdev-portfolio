@@ -1,3 +1,5 @@
+@import 'reset';
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,30 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+  font-weight: 500;
+  overflow-x: hidden;
+  color: var(--primary-black-text-color);
+
+  input,
+  button,
+  textarea,
+  select {
+    color: var(--primary-black-text-color);
+    font-family: Montserrat, sans-serif;
+
+    &::placeholder {
+      color: var(--primary-black-text-color);
+      font-family: Montserrat, sans-serif;
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .text {
