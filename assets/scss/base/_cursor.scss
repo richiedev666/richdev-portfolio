@@ -16,6 +16,8 @@
   &--hovering {
     width: 60px;
     height: 60px;
+    background-color: var(--primary-red-color);
+    mix-blend-mode: darken;
   }
 
   svg {

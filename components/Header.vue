@@ -45,13 +45,15 @@
                       :key="`header-lang-item-${language.code}`"
                       class="header__nav__item--language__dropdown__item"
                       @click="switchLanguageTo(language)"
+                      data-cursor-hover
                     >
-                      <span>{{ language.title }}</span>
+                      <span data-cursor-hover>{{ language.title }}</span>
 
                       <img
                         :src="require(`~/assets/icons/${language.code}.png`)"
                         alt=""
                         class="language-icon"
+                        data-cursor-hover
                       />
                     </div>
                   </div>
