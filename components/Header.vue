@@ -12,8 +12,9 @@
               v-for="(item, index) in nav"
               :key="`header-nav-item-${index}`"
               class="header__nav__item"
+              data-cursor-hover
             >
-              <a :href="item.link">{{ item.title }}</a>
+              <a :href="item.link" data-cursor-hover>{{ item.title }}</a>
             </li>
 
             <li class="header__nav__item header__nav__item--language">

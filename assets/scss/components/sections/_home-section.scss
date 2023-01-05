@@ -1,15 +1,36 @@
 .home-section {
   &__wrapper {
     height: 100vh;
-    background: var(--primary-background-gradient);
     max-width: 100%;
     overflow: hidden;
+    z-index: 2;
+  }
+
+  &__background {
+    background: var(--primary-background-gradient);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    &__effect {
+      background-image: url('~/assets/images/welcome-section-bg-effect.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: screen;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+      position: absolute;
+      mix-blend-mode: screen;
+    }
   }
 
   display: grid;
   grid-template-columns: 15fr 10fr;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+  position: relative;
 
   &__text {
     display: flex;
@@ -23,6 +44,8 @@
     position: relative;
     right: 0;
     top: 50px;
+    user-select: none;
+    pointer-events: none;
 
     img {
       width: 100%;

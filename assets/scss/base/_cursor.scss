@@ -1,0 +1,36 @@
+.cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 200ms, height 200ms;
+  z-index: 9999;
+
+  &--hovering {
+    width: 60px;
+    height: 60px;
+  }
+
+  svg {
+    animation: rotate 5s linear infinite;
+    transition: opacity 0.2s;
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

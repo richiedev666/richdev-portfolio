@@ -1,0 +1,11 @@
+//selection styles
+::-moz-selection {
+  /* Code for Firefox */
+  background: var(--primary-red-color);
+  color: var(--primary-yellow-color);
+}
+
+::selection {
+  background: var(--primary-red-color);
+  color: var(--primary-yellow-color);
+}

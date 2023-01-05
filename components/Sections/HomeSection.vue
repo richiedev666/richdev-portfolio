@@ -1,5 +1,9 @@
 <template>
   <section class="home-section__wrapper section__wrapper">
+    <div class="home-section__background"></div>
+
+    <div class="home-section__background__effect"></div>
+
     <div class="container">
       <div class="home-section section">
         <div class="home-section__text home-section__item">
@@ -14,8 +18,17 @@
             years of experiences in wide range of websites.
           </p>
 
-          <button class="section__button">
-            <span>{{ $t('viewPortfolio') }}</span>
+          <button
+            class="section__button"
+            data-cursor-hover
+            data-cursor-hover-text="There is amazing projects!"
+          >
+            <span
+              data-cursor-hover
+              data-cursor-hover-text="There is amazing projects!"
+            >
+              {{ $t('viewPortfolio') }}
+            </span>
           </button>
         </div>
 
