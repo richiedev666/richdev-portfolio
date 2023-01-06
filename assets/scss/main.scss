@@ -7,10 +7,13 @@
 @import 'base/transitions';
 @import 'base/browser-styles';
 @import 'base/cursor';
+@import 'base/scrollbar';
 
 /* PAGES */
 @import 'pages/home';
 
 /* COMPONENTS */
 @import 'components/header';
+@import 'components/between-section-slider';
 @import 'components/sections/home-section';
+@import 'components/sections/about-section';

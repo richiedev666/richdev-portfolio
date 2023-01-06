@@ -18,15 +18,8 @@
             years of experiences in wide range of websites.
           </p>
 
-          <button
-            class="section__button"
-            data-cursor-hover
-            data-cursor-hover-text="There is amazing projects!"
-          >
-            <span
-              data-cursor-hover
-              data-cursor-hover-text="There is amazing projects!"
-            >
+          <button class="section__button">
+            <span>
               {{ $t('viewPortfolio') }}
             </span>
           </button>

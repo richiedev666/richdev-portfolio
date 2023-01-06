@@ -1,0 +1,40 @@
+.between-section-slider {
+  &__wrapper {
+    width: 100%;
+    background-color: var(--primary-black-text-color);
+  }
+
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-image: url('~/assets/images/richdev-logo.png');
+  background-size: 135px;
+  background-position-y: center;
+  background-position-x: 0;
+  background-repeat: repeat no-repeat;
+  height: 70px;
+  animation: animate linear 60000ms infinite;
+
+  &__item {
+    width: 135px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  50% {
+    background-position-x: 100%;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}

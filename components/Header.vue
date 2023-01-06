@@ -12,9 +12,8 @@
               v-for="(item, index) in nav"
               :key="`header-nav-item-${index}`"
               class="header__nav__item"
-              data-cursor-hover
             >
-              <a :href="item.link" data-cursor-hover>{{ item.title }}</a>
+              <a :href="item.link">{{ item.title }}</a>
             </li>
 
             <li class="header__nav__item header__nav__item--language">
@@ -45,15 +44,15 @@
                       :key="`header-lang-item-${language.code}`"
                       class="header__nav__item--language__dropdown__item"
                       @click="switchLanguageTo(language)"
-                      data-cursor-hover
                     >
-                      <span data-cursor-hover>{{ language.title }}</span>
+                      <span>
+                        {{ language.title }}
+                      </span>
 
                       <img
                         :src="require(`~/assets/icons/${language.code}.png`)"
                         alt=""
                         class="language-icon"
-                        data-cursor-hover
                       />
                     </div>
                   </div>
@@ -74,6 +73,18 @@ export default {
   name: 'HeaderComponent',
 
   mixins: [clickaway],
+
+  mounted() {
+    const header = document.querySelector('.header__wrapper')
+
+    window.addEventListener('scroll', (e) => {
+      if (window.pageYOffset > 0) {
+        header.classList.add('header__wrapper--scrolling')
+      } else {
+        header.classList.remove('header__wrapper--scrolling')
+      }
+    })
+  },
 
   data: () => ({
     languageDropdown: false,
