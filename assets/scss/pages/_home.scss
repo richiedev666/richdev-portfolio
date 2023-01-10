@@ -7,6 +7,9 @@
     font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem);
     transition: all 0.2s ease-in;
     font-weight: 700;
+    max-width: 600px;
+    width: 100%;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-0.25em) translateX(-0.25rem);

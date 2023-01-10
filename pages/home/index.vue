@@ -7,6 +7,8 @@
     />
 
     <AboutSection />
+
+    <SkillsSection />
   </div>
 </template>
 
@@ -14,11 +16,13 @@
 import HomeSection from '@/components/Sections/HomeSection'
 import AboutSection from '@/components/Sections/AboutSection'
 import BetweenSectionSlider from '@/components/BetweenSectionSlider'
+import SkillsSection from '@/components/Sections/SkillsSection'
 
 export default {
   name: 'HomePage',
 
   components: {
+    SkillsSection,
     BetweenSectionSlider,
     AboutSection,
     HomeSection,

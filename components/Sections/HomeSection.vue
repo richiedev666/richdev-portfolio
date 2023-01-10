@@ -34,3 +34,9 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  name: 'HomeSection',
+}
+</script>

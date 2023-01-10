@@ -4,15 +4,16 @@
     right: 0;
     left: 0;
     top: 0;
-    background-color: transparent;
-    transition: backdrop-filter 0.2s;
     height: var(--header-height);
     z-index: 99;
     backdrop-filter: blur(0) saturate(100%) brightness(100%);
+    background-color: transparent;
+    transition: all 0.2s;
 
     &--scrolling {
-      transition: backdrop-filter 0.2s;
+      transition: all 0.2s;
       backdrop-filter: blur(15px) saturate(100%) brightness(100%);
+      background-color: rgba(254, 223, 45, 0.7);
     }
   }
 
