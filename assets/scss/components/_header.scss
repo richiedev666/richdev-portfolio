@@ -8,12 +8,17 @@
     z-index: 99;
     backdrop-filter: blur(0) saturate(100%) brightness(100%);
     background-color: transparent;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     &--scrolling {
-      transition: all 0.2s;
+      top: 0;
+      transition: all 0.3s;
       backdrop-filter: blur(15px) saturate(100%) brightness(100%);
       background-color: rgba(254, 223, 45, 0.7);
+    }
+
+    &--hidden {
+      top: -100%;
     }
   }
 
@@ -38,6 +43,7 @@
 
     &__item {
       padding: 10px;
+      cursor: pointer;
 
       &--language {
         .language-icon {
@@ -61,6 +67,7 @@
             align-items: center;
             gap: 6px;
             padding: 10px;
+            cursor: pointer;
 
             span {
               position: relative;

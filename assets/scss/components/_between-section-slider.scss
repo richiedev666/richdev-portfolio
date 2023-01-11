@@ -2,13 +2,12 @@
   &__wrapper {
     width: 100%;
     background-color: var(--primary-black-text-color);
+    padding: 10px 0;
   }
 
-  padding: 10px;
   display: flex;
   align-items: center;
-  background-image: url('~/assets/images/richdev-logo.png');
-  background-size: 135px;
+  background-size: 100px;
   background-position-y: center;
   background-position-x: 0;
   background-repeat: repeat no-repeat;

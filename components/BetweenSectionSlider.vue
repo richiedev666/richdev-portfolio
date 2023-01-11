@@ -1,6 +1,9 @@
 <template>
   <div class="between-section-slider__wrapper">
-    <div class="between-section-slider"></div>
+    <div
+      class="between-section-slider"
+      :style="`background-image: url(${image})`"
+    ></div>
   </div>
 </template>
 

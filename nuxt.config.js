@@ -15,7 +15,7 @@ export default {
 
   css: [{ src: '~/assets/scss/main.scss' }],
 
-  plugins: [],
+  plugins: [{ src: '~/plugins/v-viewer', mode: 'client' }],
 
   buildModules: [],
 

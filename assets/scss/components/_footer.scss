@@ -1,0 +1,60 @@
+.footer {
+  &__wrapper {
+    height: 170px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-style: italic;
+      font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
+
+      span {
+        color: var(--primary-red-color);
+      }
+
+      #heart {
+        transform: scale(1);
+        transition: all 0.2s;
+        &:hover {
+          animation: heartbeat 1s infinite;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}

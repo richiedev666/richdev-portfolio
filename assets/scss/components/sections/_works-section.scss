@@ -1,0 +1,147 @@
+#works-section-image {
+  &-1 {
+    top: 0;
+    right: 0;
+  }
+
+  &-2 {
+    top: 30%;
+    left: 0;
+  }
+
+  &-3 {
+    top: 50%;
+    right: 0;
+  }
+
+  &-4 {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.works-section {
+  &__wrapper {
+    background-color: var(--primary-red-color);
+    background-image: url('~/assets/images/works-section-bg-texture.png');
+    background-blend-mode: darken;
+    padding: 100px 0;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+  &__title {
+    font-size: clamp(2.8125rem, 1.6406rem + 3.75vw, 3.75rem);
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--primary-yellow-color);
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+    position: relative;
+    padding: 50px 100px;
+
+    &__cell-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      mix-blend-mode: darken;
+      pointer-events: none;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__item {
+    z-index: 10;
+
+    &__image {
+      height: 310px;
+      width: 100%;
+      background-color: #fff;
+
+      img {
+        object-position: left;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+
+      h2 {
+        font-weight: 700;
+        font-size: clamp(1.375rem, 1.0625rem + 1vw, 1.625rem);
+        height: 52px;
+      }
+
+      p {
+        font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 6px;
+
+        span {
+          font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+          font-style: italic;
+        }
+
+        &::after {
+          content: '';
+          width: 7px;
+          height: 7px;
+          position: absolute;
+          background-color: #fff;
+          border-radius: 50%;
+          right: -25%;
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+
+    .section__button {
+      &:hover {
+        box-shadow: 10px 10px 0px var(--primary-black-text-color);
+      }
+    }
+  }
+}

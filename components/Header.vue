@@ -77,7 +77,21 @@ export default {
   mounted() {
     const header = document.querySelector('.header__wrapper')
 
+    let lastPageYOffset = window.pageYOffset
     window.addEventListener('scroll', (e) => {
+      const scrollingBottom = window.pageYOffset > lastPageYOffset
+      const scrollingTop = window.pageYOffset < lastPageYOffset
+
+      if (scrollingBottom) {
+        header.classList.add('header__wrapper--hidden')
+      }
+
+      if (scrollingTop) {
+        header.classList.remove('header__wrapper--hidden')
+      }
+
+      lastPageYOffset = window.pageYOffset
+
       if (window.pageYOffset > 0) {
         header.classList.add('header__wrapper--scrolling')
       } else {
