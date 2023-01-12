@@ -54,7 +54,7 @@ export default {
           icon: MapMarkerIcon,
         },
         {
-          content: `<a href="https://github.com/limmie">Github profile</a>`,
+          content: `<a href="https://github.com/richiedev666">Github profile</a>`,
           icon: GithubIcon,
         },
       ]
