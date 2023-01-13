@@ -255,7 +255,7 @@ export default {
                 {
                   title: 'Postman',
                   level: 8,
-                  icon: require('assets/icons/postgre-icon.svg'),
+                  icon: require('assets/icons/postman-icon.svg'),
                 },
                 {
                   title: 'Webstorm',
