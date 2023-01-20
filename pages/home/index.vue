@@ -1,22 +1,22 @@
 <template>
   <div class="home__wrapper">
-    <HomeSection />
+    <HomeSection id="home-section" />
 
     <BetweenSectionSlider
       :image="require('~/assets/images/richdev-logo.png')"
     />
 
-    <AboutSection />
+    <AboutSection id="about-section" />
 
-    <SkillsSection />
+    <SkillsSection id="skills-section" />
 
     <BetweenSectionSlider
       :image="require('~/assets/images/richdev-little-red.png')"
     />
 
-    <WorksSection />
+    <WorksSection id="works-section" />
 
-    <ContactSection />
+    <ContactSection id="contacts-section" />
   </div>
 </template>
 

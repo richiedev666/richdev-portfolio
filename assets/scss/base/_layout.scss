@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
