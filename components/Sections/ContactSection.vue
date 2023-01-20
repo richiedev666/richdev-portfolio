@@ -10,7 +10,10 @@
 
     <div class="container">
       <div class="contact-section section">
-        <h1 class="contact-section__title">WANNA COOL WEBSITE? CONTACT ME</h1>
+        <h1
+          class="contact-section__title"
+          v-html="$t('sections.contact.title')"
+        ></h1>
 
         <div class="contact-section__items">
           <div
@@ -50,11 +53,13 @@ export default {
           icon: EmailIcon,
         },
         {
-          content: 'Turkmenistan, Ashgabat',
+          content: this.$t('turkmenistanAshgabat'),
           icon: MapMarkerIcon,
         },
         {
-          content: `<a href="https://github.com/limmie">Github profile</a>`,
+          content: `<a href="https://github.com/limmie">
+${this.$t('githubProfile')}
+</a>`,
           icon: GithubIcon,
         },
       ]

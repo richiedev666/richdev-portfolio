@@ -144,10 +144,6 @@ export default {
           title: 'Русский',
           code: 'ru',
         },
-        {
-          title: 'Türkmen',
-          code: 'tk',
-        },
       ]
     },
   },

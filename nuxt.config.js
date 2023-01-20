@@ -26,11 +26,10 @@ export default {
       {
         baseUrl: process.env.BASE_URL || 'http://localhost:1111',
         locales: [
-          { code: 'tk', file: 'tk_TK.js', iso: 'tk_TK' },
           { code: 'ru', file: 'ru_RU.js', iso: 'ru_RU' },
           { code: 'en', file: 'en_EN.js', iso: 'en_EN' },
         ],
-        defaultLocale: 'tk',
+        defaultLocale: 'en',
         lazy: true,
         langDir: 'lang/',
         strategy: 'no_prefix',

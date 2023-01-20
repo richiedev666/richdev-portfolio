@@ -16,33 +16,15 @@
 
     <div class="container">
       <div class="skills-section section">
-        <div class="skills-section__content">
-          <p>
-            Fueled by high energy levels and boundless enthusiasm, I’m easily
-            inspired and more then willing to follow my fascinationswherever
-            they take me. I’m passionate, expressive, multi-talentedspirit with
-            a natural ability to entertain and inspire. I’m never satisfied to
-            just come up with ideas. Instead I have an almostimpulsive need to
-            act on them
-          </p>
-
-          <p>
-            My abundant energy fuels me in the pursuit of many interests,
-            hobbies, areas of study and artistic endeavors. I’m a fast learner,
-            able to pick up new skills and juggle different projects and roles
-            with relative ease. I like to develop expertise in a number of areas
-            over the course of my life and career.
-          </p>
-
-          <p>
-            You can also call me a frontend developer, backend developer, web
-            designer, system administrator, or by any other market defined
-            function-title.
-          </p>
-        </div>
+        <div
+          class="skills-section__content"
+          v-html="$t('sections.skills.description')"
+        ></div>
 
         <div class="skills-section__stack">
-          <h1 class="skills-section__stack__title text-title">Stack</h1>
+          <h1 class="skills-section__stack__title text-title">
+            {{ $t('stack') }}
+          </h1>
 
           <div class="skills-section__stack__list">
             <div

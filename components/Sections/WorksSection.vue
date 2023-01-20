@@ -33,9 +33,9 @@
             </div>
 
             <div class="works-section__item__content">
-              <h2>{{ item.title }}</h2>
+              <h2>{{ $t(`projects[${index}].title`) }}</h2>
 
-              <p>{{ item.description }}</p>
+              <p>{{ $t(`projects[${index}].description`) }}</p>
 
               <div class="works-section__item__footer">
                 <div class="works-section__item__footer__item">
@@ -86,28 +86,19 @@ export default {
     projects() {
       return [
         {
-          title: 'My First Personal Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('~/assets/images/works/personal/preview.png'),
           images: [require('~/assets/images/works/personal/full.png')],
           date: '12.12.2022',
         },
         {
-          title: 'Ravel - Travel Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('assets/images/works/ravel/preview.png'),
           images: [require('~/assets/images/works/ravel/full.png')],
           date: '12.12.2022',
         },
         {
-          title: 'Sublime - Game Developers Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('~/assets/images/works/sublime/preview.png'),
           images: [require('~/assets/images/works/sublime/full.png')],
 
@@ -115,28 +106,19 @@ export default {
         },
 
         {
-          title: 'Duhoot - Booking Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('~/assets/images/works/duhoot/preview.png'),
           images: [require('~/assets/images/works/duhoot/full.png')],
           date: '12.12.2022',
         },
         {
-          title: 'Golden One - Studio Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('~/assets/images/works/golden/preview.png'),
           images: [require('~/assets/images/works/golden/full.png')],
           date: '12.12.2022',
         },
         {
-          title: 'My Second Personal Website',
-          description:
-            'Lorem ipsum dolor sit amet consectetur. Ut montes purus nisl in diam ultrices',
-          tags: [{ title: 'Frontend' }],
+          tags: [{ title: this.$t('frontend') }],
           previewImage: require('~/assets/images/works/personal-2/preview.png'),
           images: [require('~/assets/images/works/personal-2/full.png')],
           date: '12.12.2022',
