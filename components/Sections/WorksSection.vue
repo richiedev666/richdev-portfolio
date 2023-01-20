@@ -63,11 +63,11 @@
           </div>
         </div>
 
-        <div class="works-section__button">
-          <button class="section__button">
-            <span>{{ $t('viewAllWorks') }}</span>
-          </button>
-        </div>
+        <!--        <div class="works-section__button">-->
+        <!--          <button class="section__button">-->
+        <!--            <span>{{ $t('viewAllWorks') }}</span>-->
+        <!--          </button>-->
+        <!--        </div>-->
       </div>
     </div>
   </section>

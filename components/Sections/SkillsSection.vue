@@ -76,11 +76,11 @@
         </div>
 
         <div class="skills-section__button">
-          <button class="section__button">
+          <a class="section__button" href="#contacts-section">
             <span>
               {{ $t('hireMe') }}
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

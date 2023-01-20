@@ -17,11 +17,13 @@
             v-html="$t('sections.landing.description')"
           ></p>
 
-          <button class="section__button">
-            <span>
-              {{ $t('viewPortfolio') }}
-            </span>
-          </button>
+          <a href="#works-section">
+            <button class="section__button">
+              <span>
+                {{ $t('viewPortfolio') }}
+              </span>
+            </button>
+          </a>
         </div>
 
         <div class="home-section__item">
