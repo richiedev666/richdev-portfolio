@@ -65,31 +65,31 @@ module.exports = {
 
   projects: [
     {
-      title: 'My First Personal Website 🎂',
+      title: 'Мой первый персональный сайт 🎂',
       description:
-        'This is my first ever production created website, first hosted in the cheapest hosting in the world you can find',
+        'Это мой первый веб-сайт, созданный на продакшне, впервые размещенный на самом дешевом хостинге в мире, который вы можете найти .  😅',
     },
     {
       title: 'Ravel - Travel Website ✈️',
-      description: 'Frontend of the Travel website - first hard project',
+      description: 'Фронтенд туристического сайта - первый тяжелый проект',
     },
     {
-      title: 'Sublime - Game Developers Website 🎮',
+      title: 'Sublime - Веб-сайт разработчиков игр 🎮',
       description:
-        "But this was harder than the previous one, didn't know about Grid and Flexbox at that moment 😂",
+        'Но это было сложнее, чем предыдущее, не знал тогда про Grid и Flexbox 😂',
     },
     {
-      title: 'Duhoot - Booking Website ✈️',
+      title: 'Duhoot - сайт бронирования ✈️',
       description:
-        'Frontend of the Travel website - first trying Grid system 🔬',
+        'Внешний интерфейс веб-сайта о путешествиях — первая проба грид-системы 🔬',
     },
     {
-      title: 'Golden One - Studio Website 🪙',
-      description: 'Practising HTML & CSS 🔬',
+      title: 'Golden One - Сайт студии 🪙',
+      description: 'Практика HTML и CSS 🔬',
     },
     {
-      title: 'My Second Personal Website 🪙',
-      description: 'Still need to improve skills... 🤔',
+      title: 'Мой второй персональный сайт 🌠',
+      description: 'Все еще нужно улучшить навыки... 🤔',
     },
   ],
 }

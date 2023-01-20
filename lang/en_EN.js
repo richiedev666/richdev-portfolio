@@ -94,7 +94,7 @@ module.exports = {
     {
       title: 'My First Personal Website 🎂',
       description:
-        'This is my first ever production created website, first hosted in the cheapest hosting in the world you can find',
+        'This is my first ever production created website, first hosted in the cheapest hosting in the world you can find 😅',
     },
     {
       title: 'Ravel - Travel Website ✈️',
@@ -115,7 +115,7 @@ module.exports = {
       description: 'Practising HTML & CSS 🔬',
     },
     {
-      title: 'My Second Personal Website 🪙',
+      title: 'My Second Personal Website  🌠',
       description: 'Still need to improve skills... 🤔',
     },
   ],

@@ -10,7 +10,9 @@
 
     <div class="container">
       <div class="contact-section section">
-        <h1 class="contact-section__title">WANNA COOL WEBSITE? CONTACT ME</h1>
+        <h1 class="contact-section__title">
+          {{ $t('sections.contact.title') }}
+        </h1>
 
         <div class="contact-section__items">
           <div
@@ -54,7 +56,9 @@ export default {
           icon: MapMarkerIcon,
         },
         {
-          content: `<a href="https://github.com/richiedev666">${this.$t('githubProfile')}</a>`,
+          content: `<a href="https://github.com/richiedev666">${this.$t(
+            'githubProfile'
+          )}</a>`,
           icon: GithubIcon,
         },
       ]
