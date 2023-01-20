@@ -91,4 +91,5 @@ module.exports = {
       title: 'My Second Personal Website 🪙',
       description: 'Still need to improve skills... 🤔',
     },
+  ],
 }
