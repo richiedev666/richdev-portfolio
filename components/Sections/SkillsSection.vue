@@ -24,7 +24,7 @@
 
     <div class="skills-section__badge__wrapper">
       <div class="skills-section__badge">
-        <img src="~/assets/images/skills-badge.png" alt="" />
+        <img src="~/assets/images/skills-badge.webp" alt="" />
       </div>
     </div>
 
