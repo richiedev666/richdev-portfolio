@@ -39,5 +39,10 @@ export default {
     AboutSection,
     HomeSection,
   },
+
+  head() {
+    const { title, description } = this.$t('meta.home')
+    return this.$returnMetaHeaders(this, { title, description })
+  },
 }
 </script>

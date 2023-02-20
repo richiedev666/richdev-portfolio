@@ -119,4 +119,11 @@ module.exports = {
       description: 'Still need to improve skills... 🤔',
     },
   ],
+
+  meta: {
+    title: 'Richie Web Development',
+    description:
+      'I’m Richie, talented full-stack web developer with over 5+ years of experiences in wide range of websites.',
+    site_name: 'Richie - Web Development',
+  },
 }
