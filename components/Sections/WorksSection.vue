@@ -88,40 +88,40 @@ export default {
       return [
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('~/assets/images/works/personal/preview.png'),
-          images: [require('~/assets/images/works/personal/full.png')],
+          previewImage: require('~/assets/images/works/personal/preview.webp'),
+          images: [require('~/assets/images/works/personal/full.webp')],
           date: '12.12.2022',
         },
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('assets/images/works/ravel/preview.png'),
-          images: [require('~/assets/images/works/ravel/full.png')],
+          previewImage: require('assets/images/works/ravel/preview.webp'),
+          images: [require('~/assets/images/works/ravel/full.webp')],
           date: '12.12.2022',
         },
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('~/assets/images/works/sublime/preview.png'),
-          images: [require('~/assets/images/works/sublime/full.png')],
+          previewImage: require('~/assets/images/works/sublime/preview.webp'),
+          images: [require('~/assets/images/works/sublime/full.webp')],
 
           date: '12.12.2022',
         },
 
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('~/assets/images/works/duhoot/preview.png'),
-          images: [require('~/assets/images/works/duhoot/full.png')],
+          previewImage: require('~/assets/images/works/duhoot/preview.webp'),
+          images: [require('~/assets/images/works/duhoot/full.webp')],
           date: '12.12.2022',
         },
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('~/assets/images/works/golden/preview.png'),
-          images: [require('~/assets/images/works/golden/full.png')],
+          previewImage: require('~/assets/images/works/golden/preview.webp'),
+          images: [require('~/assets/images/works/golden/full.webp')],
           date: '12.12.2022',
         },
         {
           tags: [{ title: this.$t('frontend') }],
-          previewImage: require('~/assets/images/works/personal-2/preview.png'),
-          images: [require('~/assets/images/works/personal-2/full.png')],
+          previewImage: require('~/assets/images/works/personal-2/preview.webp'),
+          images: [require('~/assets/images/works/personal-2/full.webp')],
           date: '12.12.2022',
         },
       ]
