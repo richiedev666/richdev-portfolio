@@ -1,11 +1,18 @@
 <template>
   <section class="contact-section__wrapper section__wrapper">
     <div id="contact-section-image">
-      <img src="~/assets/images/contact-us-image.png" alt="" />
+      <img
+        src="~/assets/images/contact-us-image@1.webp"
+        srcset="
+          ~/assets/images/contact-us-image@1.webp 1x,
+          ~/assets/images/contact-us-image@2.webp 2x
+        "
+        alt=""
+      />
     </div>
 
     <div id="contact-section-bg">
-      <img src="~/assets/images/contact-us-bg-texture.png" alt="" />
+      <img src="~/assets/images/contact-us-bg-texture.webp" alt="" />
     </div>
 
     <div class="container">

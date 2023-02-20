@@ -28,7 +28,14 @@
 
         <div class="home-section__item">
           <div class="home-section__image">
-            <img src="~/assets/images/landing-image.webp" alt="" />
+            <img
+              src="~/assets/images/landing-image@1.webp"
+              srcset="
+                ~/assets/images/landing-image@1.webp 1x,
+                ~/assets/images/landing-image@2.webp 2x
+              "
+              alt=""
+            />
           </div>
         </div>
       </div>

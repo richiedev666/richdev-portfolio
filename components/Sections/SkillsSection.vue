@@ -1,11 +1,25 @@
 <template>
   <section class="skills-section__wrapper section__wrapper">
     <div id="skills-section-image-1" class="skills-section__image">
-      <img src="~/assets/images/skills-bg-image-1.png" alt="" />
+      <img
+        src="~/assets/images/skills-bg-image-1@1.webp"
+        srcset="
+          ~/assets/images/skills-bg-image-1@1.webp 1x,
+          ~/assets/images/skills-bg-image-1@2.webp 2x
+        "
+        alt=""
+      />
     </div>
 
     <div id="skills-section-image-2" class="skills-section__image">
-      <img src="~/assets/images/skills-bg-image-2.png" alt="" />
+      <img
+        src="~/assets/images/skills-bg-image-2@1.webp"
+        srcset="
+          ~/assets/images/skills-bg-image-2@1.webp 1x,
+          ~/assets/images/skills-bg-image-2@2.webp 2x
+        "
+        alt=""
+      />
     </div>
 
     <div class="skills-section__badge__wrapper">

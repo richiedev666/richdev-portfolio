@@ -1,6 +1,9 @@
 .about-section {
   &__wrapper {
-    background-image: url('~/assets/images/about-section-bg-effect.png');
+    background-image: image-set(
+      url('~/assets/images/about-section-bg-effect@1.png') 1x,
+      url('~/assets/images/about-section-bg-effect@2.png') 2x
+    );
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 350px 0;

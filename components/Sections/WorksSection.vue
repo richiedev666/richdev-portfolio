@@ -6,7 +6,8 @@
       class="works-section__image"
     >
       <img
-        :src="require(`~/assets/images/works-section-image-${i}.png`)"
+        :src="require(`~/assets/images/works-section-image-${i}@1.png`)"
+        :srcset="`${require(`~/assets/images/works-section-image-${i}@1.png`)} 1x, ${require(`~/assets/images/works-section-image-${i}@2.png`)} 2x`"
         alt=""
       />
     </div>
@@ -17,7 +18,7 @@
 
         <div class="works-section__items">
           <div class="works-section__items__cell-bg">
-            <img src="~/assets/images/works-section-cell-bg.png" alt="" />
+            <img src="~/assets/images/works-section-cell-bg.webp" alt="" />
           </div>
 
           <div
