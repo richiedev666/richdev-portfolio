@@ -1,6 +1,10 @@
 export default {
   css: [{ src: '~/assets/scss/main.scss' }],
 
+  ssr: false,
+
+  target: 'static',
+
   head: {
     meta: [
       { charset: 'utf-8' },
