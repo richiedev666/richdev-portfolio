@@ -42,3 +42,7 @@ export default {
   name: 'AboutSection',
 }
 </script>
+
+<style lang="scss">
+@import '~/assets/scss/components/sections/_about-section.scss';
+</style>

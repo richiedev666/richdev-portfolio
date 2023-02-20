@@ -17,6 +17,11 @@ body {
   overflow-x: hidden;
   color: var(--primary-black-text-color);
 
+  &.disabled {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   input,
   button,
   textarea,

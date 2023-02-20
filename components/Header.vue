@@ -6,8 +6,8 @@
           <img src="~/assets/images/richdev-logo.png" alt="" />
         </div>
 
-        <nav class="header__nav__wrapper">
-          <ul class="header__nav">
+        <nav class="header__nav__wrapper" :class="{ 'is-active': headerNav }">
+          <ul class="header__nav" v-on-clickaway="closeHeaderNav">
             <li
               v-for="(item, index) in nav"
               :key="`header-nav-item-${index}`"
@@ -16,7 +16,10 @@
               <a :href="item.link">{{ item.title }}</a>
             </li>
 
-            <li class="header__nav__item header__nav__item--language">
+            <li
+              class="header__nav__item header__nav__item--language"
+              :class="{ 'is-active': languageDropdown }"
+            >
               <div
                 class="header__nav__item--language__placeholder"
                 v-on-clickaway="closeLanguageDropdown"
@@ -61,6 +64,14 @@
             </li>
           </ul>
         </nav>
+
+        <div
+          class="header__nav__hamburger"
+          @click="toggleHeaderNav"
+          :class="{ 'is-active': headerNav }"
+        >
+          <div class="icon"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -84,6 +95,8 @@ export default {
 
       if (scrollingBottom) {
         header.classList.add('header__wrapper--hidden')
+        this.handleBodyClass(false)
+        this.headerNav = false
       }
 
       if (scrollingTop) {
@@ -102,6 +115,7 @@ export default {
 
   data: () => ({
     languageDropdown: false,
+    headerNav: false,
   }),
 
   computed: {
@@ -162,6 +176,40 @@ export default {
     closeLanguageDropdown() {
       this.languageDropdown = false
     },
+
+    toggleHeaderNav() {
+      this.headerNav = !this.headerNav
+
+      this.handleBodyClass(this.headerNav)
+    },
+
+    closeHeaderNav(event) {
+      const element = event.target
+
+      const ignoreClassNames = ['icon', 'header__nav__hamburger']
+
+      if (ignoreClassNames.includes(element.classList[0])) return
+
+      this.headerNav = false
+
+      this.handleBodyClass(this.headerNav)
+    },
+
+    handleBodyClass(headerNav) {
+      headerNav
+        ? document.body.classList.add('disabled')
+        : document.body.classList.remove('disabled')
+    },
+  },
+
+  watch: {
+    headerNav(val) {
+      this.handleBodyClass(val)
+    },
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/components/header';
+</style>

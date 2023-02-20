@@ -73,3 +73,7 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+@import '~/assets/scss/components/sections/_contact-section.scss';
+</style>

@@ -20,7 +20,7 @@
       gap: 10px;
       font-weight: 700;
       font-style: italic;
-      font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
+      font-size: clamp(0.875rem, -0.0625rem + 3vw, 1.625rem);
 
       span {
         color: var(--primary-red-color);
@@ -56,5 +56,14 @@
   }
   100% {
     transform: scale(0.75);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      height: 100%;
+      padding: 30px 0;
+    }
   }
 }

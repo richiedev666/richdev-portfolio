@@ -41,11 +41,26 @@
     align-items: center;
     gap: 10px;
 
+    &__hamburger {
+      display: none;
+    }
+
     &__item {
       padding: 10px;
       cursor: pointer;
 
       &--language {
+        transition: all 0.2s ease-in;
+        border-radius: 10px;
+        background-color: var(--primary-black-text-color);
+        color: white;
+
+        &.is-active {
+          transform: translateY(-0.225em) translateX(-0.225rem);
+          transition: all 0.2s ease-in;
+          box-shadow: 5px 5px 0px var(--primary-red-color);
+        }
+
         .language-icon {
           width: 20px;
 
@@ -57,20 +72,38 @@
 
         &__dropdown {
           position: absolute;
-          top: calc(100% + 10px);
-          left: 0;
+          top: calc(100% + 21px);
+          right: 0;
           background-color: #fff;
           border-radius: 10px;
 
           &__item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             gap: 6px;
             padding: 10px;
             cursor: pointer;
 
+            &:first-child {
+              border-radius: 10px 10px 0 0;
+            }
+
+            &:last-child {
+              border-radius: 0 0 10px 10px;
+            }
+
             span {
               position: relative;
+              color: var(--primary-black-text-color);
+            }
+
+            &:hover {
+              background-color: var(--primary-red-color);
+
+              span {
+                color: white;
+              }
             }
           }
 
@@ -80,7 +113,7 @@
             width: 0;
             height: 0;
             top: -10px;
-            left: 30%;
+            right: 10px;
             margin-left: -10px;
             border-style: solid;
             border-width: 0 10px 10px 10px;
@@ -96,6 +129,108 @@
             align-items: center;
             gap: 8px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__nav {
+      width: 300px;
+      background-color: white;
+      padding: 80px 0;
+      flex-direction: column;
+
+      &__item {
+        &--language {
+          &__dropdown {
+            border: 2px solid var(--primary-red-color);
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &__wrapper {
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateX(100%);
+
+        &.is-active {
+          display: flex;
+          justify-content: flex-end;
+          transform: translateX(0);
+        }
+      }
+
+      &__hamburger {
+        display: block;
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 1rem;
+        right: 1rem;
+
+        $hamburger-stick-width: 40px;
+        $hamburger-stick-height: 4px;
+        $hamburger-background-color: var(--primary-black-text-color);
+
+        .icon {
+          transition-duration: 0.5s;
+          position: absolute;
+          height: $hamburger-stick-height;
+          width: $hamburger-stick-width;
+          top: 30px;
+          background-color: $hamburger-background-color;
+          pointer-events: none;
+
+          &:before {
+            content: '';
+            transition-duration: 0.5s;
+            position: absolute;
+            height: $hamburger-stick-height;
+            width: $hamburger-stick-width;
+            top: -10px;
+            background-color: $hamburger-background-color;
+          }
+
+          &:after {
+            content: '';
+            transition-duration: 0.5s;
+            position: absolute;
+            height: $hamburger-stick-height;
+            width: $hamburger-stick-width;
+            top: 10px;
+            background-color: $hamburger-background-color;
+          }
+        }
+
+        &.is-active {
+          .icon {
+            transition-duration: 0.5s;
+            transform: rotateZ(180deg);
+
+            &:before {
+              transform: rotateZ(45deg) scaleX(0.75) translate(10px, -6px);
+            }
+
+            &:after {
+              transform: rotateZ(-45deg) scaleX(0.75) translate(10px, 6px);
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
         }
       }
     }

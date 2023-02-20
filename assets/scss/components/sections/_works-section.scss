@@ -25,6 +25,7 @@
     background-color: var(--primary-red-color);
     background-image: url('~/assets/images/works-section-bg-texture.webp');
     background-blend-mode: darken;
+
     padding: 100px 0;
     position: relative;
   }
@@ -144,5 +145,52 @@
         box-shadow: 10px 10px 0px var(--primary-black-text-color);
       }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .works-section {
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      &__cell-bg {
+        display: none;
+      }
+    }
+
+    &__item {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 14px;
+      border-radius: 10px;
+
+      &__image {
+        border-radius: 10px;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .works-section {
+    &__items {
+      padding: 50px 14px;
+    }
+
+    &__image {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #works-section-image-1 {
+    display: none;
   }
 }

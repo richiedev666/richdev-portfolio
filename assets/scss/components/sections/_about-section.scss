@@ -65,5 +65,31 @@
       font-size: clamp(1.375rem, 1.0625rem + 1vw, 1.625rem);
       margin-bottom: 30px;
     }
+
+    &__image {
+      width: 100%;
+      max-width: 400px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    grid-template-columns: 1fr;
+
+    &__image {
+      display: none;
+    }
+
+    &__content {
+      &__image {
+        max-width: unset;
+      }
+    }
   }
 }

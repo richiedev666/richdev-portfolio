@@ -267,3 +267,7 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+@import '~/assets/scss/components/sections/_skills-section.scss';
+</style>

@@ -26,7 +26,7 @@
           </a>
         </div>
 
-        <div class="home-section__item">
+        <div class="home-section__item home-section__image__wrapper">
           <div class="home-section__image">
             <img
               src="~/assets/images/landing-image@1.webp"
@@ -48,3 +48,7 @@ export default {
   name: 'HomeSection',
 }
 </script>
+
+<style lang="scss">
+@import '~/assets/scss/components/sections/home-section.scss';
+</style>
