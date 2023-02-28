@@ -9,7 +9,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        name: 'title',
+        hid: 'title',
+        content: 'Richie Web Developer - richie dev',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'I’m Richie, talented full-stack web developer with over 5+ years of experiences in wide range of websites.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
