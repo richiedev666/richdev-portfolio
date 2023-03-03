@@ -10,6 +10,8 @@ module.exports = {
   hireMe: 'Hire me',
   myWorks: 'My works',
   viewAllWorks: 'View all works',
+  blog: 'Blog',
+
   sections: {
     landing: {
       title: `Hello, <br />my name is <span>Richie</span>`,
