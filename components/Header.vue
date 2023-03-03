@@ -2,9 +2,11 @@
   <header class="header__wrapper">
     <div class="container">
       <div class="header">
-        <div class="header__logo">
-          <img src="~/assets/images/richdev-logo.png" alt="" />
-        </div>
+        <nuxt-link to="/">
+          <div class="header__logo">
+            <img src="~/assets/images/richdev-logo.png" alt="" />
+          </div>
+        </nuxt-link>
 
         <nav class="header__nav__wrapper" :class="{ 'is-active': headerNav }">
           <ul class="header__nav" v-on-clickaway="closeHeaderNav">
@@ -13,7 +15,16 @@
               :key="`header-nav-item-${index}`"
               class="header__nav__item"
             >
-              <a :href="item.link">{{ item.title }}</a>
+              <a v-if="item.linkType === 'a'" :href="item.link">{{
+                item.title
+              }}</a>
+
+              <nuxt-link
+                v-else-if="item.linkType === 'nuxt-link'"
+                :to="item.link"
+              >
+                {{ item.title }}
+              </nuxt-link>
             </li>
 
             <li
@@ -124,26 +135,37 @@ export default {
         {
           title: this.$t('home'),
           link: '/home#home-section',
+          linkType: 'a',
         },
         {
           title: this.$t('aboutMe'),
           link: '/home#about-section',
+          linkType: 'a',
         },
         {
           title: this.$t('skills'),
           link: '/home#skills-section',
+          linkType: 'a',
         },
         {
           title: this.$t('works'),
           link: '/home#works-section',
+          linkType: 'a',
         },
         {
           title: this.$t('experience'),
           link: '/home#experience-section',
+          linkType: 'a',
+        },
+        {
+          title: this.$t('blog'),
+          link: '/blog',
+          linkType: 'nuxt-link',
         },
         {
           title: this.$t('contacts'),
           link: '/home#contacts-section',
+          linkType: 'a',
         },
       ]
     },

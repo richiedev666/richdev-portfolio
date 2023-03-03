@@ -10,6 +10,7 @@ module.exports = {
   hireMe: 'Нанять',
   myWorks: 'Мои работы',
   viewAllWorks: 'Показать все работы',
+  blog: 'Блог',
 
   sections: {
     landing: {
