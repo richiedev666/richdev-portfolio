@@ -59,8 +59,6 @@ export default function ({ route, app }, inject) {
         },
       ]
 
-      console.log(i18nHead.link)
-
       return {
         htmlAttrs: {
           ...i18nHead.htmlAttrs,

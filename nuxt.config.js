@@ -84,7 +84,7 @@ export default {
     }
 
     return {
-      hostname: process.env.BASE_URL,
+      hostname: process.env.BASE_URL || 'https://richdev.netlify.app',
       gzip: true,
       defaults: {
         changefreq: 'daily',
