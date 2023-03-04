@@ -7,7 +7,9 @@ export default {
 
   target: 'static',
 
-  hostName: '',
+  env: {
+    BASE_URL: 'https://richdev.netlify.app',
+  },
 
   generate: {
     routes() {
@@ -82,7 +84,7 @@ export default {
     }
 
     return {
-      hostname: 'https://richdev.netlify.app',
+      hostname: process.env.BASE_URL,
       gzip: true,
       defaults: {
         changefreq: 'daily',
