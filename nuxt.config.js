@@ -55,7 +55,7 @@ export default {
     [
       '@nuxtjs/i18n',
       {
-        baseUrl: process.env.BASE_URL || 'http://localhost:1111',
+        baseUrl: process.env.BASE_URL || 'https://richdev.netlify.app',
         locales: [
           { code: 'ru', file: 'ru_RU.js', iso: 'ru_RU' },
           { code: 'en', file: 'en_EN.js', iso: 'en_EN' },
