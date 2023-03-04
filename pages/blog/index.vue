@@ -29,6 +29,10 @@ export default {
       return Blogs[this.$i18n.locale] || []
     },
   },
+  head() {
+    const { title, description } = this.$t('meta.blog')
+    return this.$returnMetaHeaders(this, { title, description })
+  },
 }
 </script>
 

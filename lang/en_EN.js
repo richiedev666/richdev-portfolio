@@ -128,6 +128,11 @@ module.exports = {
       description:
         'I’m Richie, talented full-stack web developer with over 5+ years of experiences in wide range of websites.',
     },
+    blog: {
+      title: 'Richie Developer - Website Development Blog',
+      description:
+        "Keep up with the latest website development trends and insights on Richie Developer's blog. Learn about website design, front-end and back-end development, and more from an experienced software engineer.",
+    },
     site_name: 'Richie - Web Development',
   },
 }
