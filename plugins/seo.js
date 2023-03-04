@@ -4,7 +4,7 @@ export default function ({ route, app }, inject) {
     (context, { title = '', description = '', image = '' }) => {
       const i18nHead = context.$nuxtI18nHead({ addSeoAttributes: true })
 
-      const fullPath = `${process.env.BASE_URL}${route.fullPath}`
+      const fullPath = `${process.env.BASE_URL}${context.$route.fullPath}`
 
       const meta = [
         {
@@ -58,6 +58,8 @@ export default function ({ route, app }, inject) {
           content: title,
         },
       ]
+
+      console.log(i18nHead.link)
 
       return {
         htmlAttrs: {
