@@ -4,7 +4,7 @@ export default {
       id: 1,
       title: 'Мой первый пост',
       description: 'Это мой первый пост 🤷‍♂️',
-      image: require('~/assets/blog/blog-1.gif'),
+      image: '/blog/previews/blog-1.gif',
       date: '03.04.2023',
       tags: ['Перерождение'],
       content: `
@@ -71,7 +71,7 @@ export default {
       id: 1,
       title: 'My first post',
       description: 'My first post 👌🤷‍♂️',
-      image: require('~/assets/blog/blog-1.gif'),
+      image: '/blog/previews/blog-1.gif',
       date: '03.04.2023',
       tags: ['Rebirth'],
       content: `

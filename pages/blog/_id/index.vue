@@ -48,6 +48,15 @@ export default {
     return { blog }
   },
 
+  head() {
+    let { title, description, image } = this.blog
+
+    title += ' - Richie Developer'
+    description += ' - Richie Developer'
+
+    return this.$returnMetaHeaders(this, { title, description, image })
+  },
+
   methods: {
     scrollToBottom() {
       window.scrollTo({
