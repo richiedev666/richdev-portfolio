@@ -1,9 +1,25 @@
+import Blogs from './blogs/index'
+
 export default {
   css: [{ src: '~/assets/scss/main.scss' }],
 
   ssr: false,
 
   target: 'static',
+
+  hostName: '',
+
+  generate: {
+    routes() {
+      const routesToGenerate = ['/', '/blogs']
+
+      for (let i = 0; i < Blogs['en'].length; i++) {
+        routesToGenerate.push(`/blogs/${i + 1}`)
+      }
+
+      return routesToGenerate
+    },
+  },
 
   head: {
     meta: [
@@ -52,7 +68,30 @@ export default {
         },
       },
     ],
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap() {
+    const routes = [{ url: '/' }, { url: '/blogs' }]
+
+    const defaultLocale =
+      this.requiredModules['@nuxtjs/i18n'].options.defaultLocale
+
+    for (let i = 0; i < Blogs[defaultLocale].length; i++) {
+      routes.push({ url: `/blogs/${i + 1}`, changeFreq: 'daily' })
+    }
+
+    return {
+      hostname: 'https://richdev.netlify.app',
+      gzip: true,
+      defaults: {
+        changefreq: 'daily',
+        priority: 1,
+        lastmod: new Date(),
+      },
+      routes,
+    }
+  },
 
   axios: {
     baseURL: '/',
