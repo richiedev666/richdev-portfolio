@@ -38,6 +38,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~/assets/scss/base/_mixins.scss';
+
 .blog__item {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -46,7 +48,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  max-width: 300px;
   width: 100%;
   margin: 0 auto;
 
@@ -70,10 +71,15 @@ export default {
 
     h2 {
       font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+      max-height: 48px;
+      width: 100%;
+      @include textCut(2);
     }
 
     p {
       font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+      min-height: 28px;
+      @include textCut(2);
     }
 
     &__panel {
@@ -108,6 +114,12 @@ export default {
         }
       }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .blog__item {
+    max-width: 300px;
   }
 }
 </style>

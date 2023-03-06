@@ -88,7 +88,7 @@ export default {
 #scroll-to-bottom {
   animation: move 1s ease-in-out infinite alternate;
   position: absolute;
-  top: 50vh;
+  top: 70vh;
   width: 50px;
   height: 50px;
   border-radius: 50%;
