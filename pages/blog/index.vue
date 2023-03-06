@@ -51,4 +51,16 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
+@media (max-width: 992px) {
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 578px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

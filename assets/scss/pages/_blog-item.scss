@@ -147,6 +147,7 @@
       padding-left: 5rem;
       font-family: 'Special Elite', cursive;
       margin: 20px 0;
+      overflow: hidden;
 
       blockquote {
         font-weight: 100;
@@ -168,7 +169,7 @@
 
         &:before {
           content: '“';
-          left: -5rem;
+          left: -14%;
           top: -2rem;
         }
 
@@ -181,6 +182,35 @@
       cite {
         line-height: 3;
         text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-item {
+    &__header {
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+      height: unset;
+
+      &__image {
+        margin: 0 auto;
+      }
+    }
+
+    &__content {
+      .blockquote {
+        padding: 0;
+
+        blockquote {
+          padding: 0;
+
+          &::after,
+          &::before {
+            display: none;
+          }
+        }
       }
     }
   }

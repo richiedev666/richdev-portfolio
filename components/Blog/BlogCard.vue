@@ -46,6 +46,9 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
 
   &__image {
     width: 100%;
