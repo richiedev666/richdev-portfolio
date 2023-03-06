@@ -35,20 +35,6 @@
         </div>
       </div>
     </div>
-    <div id="sfcwsj27tatlfw2eyaunsfj4bkfjuwqk1yb" class="footer__counter"></div>
-    <script
-      type="text/javascript"
-      src="https://counter4.optistats.ovh/private/counter.js?c=wsj27tatlfw2eyaunsfj4bkfjuwqk1yb&down=async"
-      async
-    ></script>
-    <noscript
-      ><a href="https://www.freecounterstat.com" title="site visitor counter"
-        ><img
-          src="https://counter4.optistats.ovh/private/freecounterstat.php?c=wsj27tatlfw2eyaunsfj4bkfjuwqk1yb"
-          border="0"
-          title="site visitor counter"
-          alt="site visitor counter" /></a
-    ></noscript>
   </footer>
 </template>
 
