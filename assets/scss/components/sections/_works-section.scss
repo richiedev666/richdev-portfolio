@@ -177,6 +177,14 @@
 
 @media (max-width: 768px) {
   .works-section {
+    &__wrapper {
+      padding: 50px 0;
+    }
+
+    &__title {
+      padding-bottom: 0;
+    }
+
     &__items {
       padding: 50px 14px;
     }

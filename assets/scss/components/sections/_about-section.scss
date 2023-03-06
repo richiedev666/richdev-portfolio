@@ -82,6 +82,11 @@
   .about-section {
     grid-template-columns: 1fr;
 
+    &__wrapper {
+      padding-bottom: 140px;
+      padding-top: 40px;
+    }
+
     &__image {
       display: none;
     }
