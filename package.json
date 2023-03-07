@@ -16,7 +16,7 @@
     "@nuxtjs/i18n": "^7.3.1",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.27.2",
-    "nuxt": "^2.16.0",
+    "nuxt": "^2.16.1",
     "sass-loader": "^10.4.1",
     "v-viewer": "^1.6.4",
     "vue": "^2.6.14",
