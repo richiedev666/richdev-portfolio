@@ -77,6 +77,10 @@
       font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
     }
 
+    .image {
+      margin: 10px 0;
+    }
+
     .block {
       margin-bottom: 16px;
       display: flex;

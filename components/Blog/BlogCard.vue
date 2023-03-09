@@ -85,9 +85,11 @@ export default {
     &__panel {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       gap: 20px;
+      flex-wrap: wrap;
       margin-bottom: 8px;
+      max-height: 15px;
+      overflow: hidden;
 
       span {
         font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
