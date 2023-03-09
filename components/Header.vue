@@ -153,11 +153,6 @@ export default {
           linkType: 'a',
         },
         {
-          title: this.$t('experience'),
-          link: '/home#experience-section',
-          linkType: 'a',
-        },
-        {
           title: this.$t('blog'),
           link: '/blog',
           linkType: 'nuxt-link',
